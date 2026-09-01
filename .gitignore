@@ -1,0 +1,31 @@
+# Rust build output
+/target/
+
+# Runtime state and Cloudflare logs
+/.runtime/
+/.cloudflared/
+*.log
+
+# Local Web Push state (private key and subscription secrets)
+/data/*
+!/data/.gitkeep
+*vapid-private*
+subscription.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Optional design-tool runtime output
+/.impeccable/
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
